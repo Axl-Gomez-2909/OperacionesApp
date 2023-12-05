@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="OperacionesApp.MainPage">
+
+    <TabbedPage.Children>
+        <!-- Pestaña 1: Suma -->
+        <ContentPage Title="Suma">
+            <StackLayout>
+                <Label Text="Número 1" FontSize="16" />
+                <Entry x:Name="valorsuma1" Placeholder="Ingrese el primer valor" Keyboard="Numeric" />
+
+                <Label Text="Número 2" FontSize="16" />
+                <Entry x:Name="valorsuma2" Placeholder="Ingrese el segundo valor" Keyboard="Numeric" />
+
+                <Label Text="Número 3" FontSize="16" />
+                <Entry x:Name="valorsuma3" Placeholder="Ingrese el tercer valor" Keyboard="Numeric" />
+
+                <Button Text="Sumar" Clicked="Sumar_Clicked" BackgroundColor="#4CAF50" TextColor="White" />
+
+                <Label Text="Resultado de la Suma" FontSize="18" FontAttributes="Bold" />
+                <Label x:Name="resultadoSuma" FontSize="24" TextColor="#2196F3" />
+
+                <Button Text="Limpiar" Clicked="Limpiar_Clicked" BackgroundColor="#FF5722" TextColor="White" />
+            </StackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 2: Resta -->
+        <ContentPage Title="Resta">
+            <StackLayout>
+                <Label Text="Número 1" FontSize="16" />
+                <Entry x:Name="valorresta1" Placeholder="Ingrese el primer valor" Keyboard="Numeric" />
+
+                <Label Text="Número 2" FontSize="16" />
+                <Entry x:Name="valorresta2" Placeholder="Ingrese el segundo valor" Keyboard="Numeric" />
+
+
+                <Button Text="Restar" Clicked="Resta_Clicked" BackgroundColor="#4CAF50" TextColor="White" />
+
+                <Label Text="Resultado de la Resta" FontSize="18" FontAttributes="Bold" />
+                <Label x:Name="resultadoResta" FontSize="24" TextColor="#2196F3" />
+
+                <Button Text="Limpiar" Clicked="Limpiar_Clicked" BackgroundColor="#FF5722" TextColor="White" />
+            </StackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 3: Multiplicación -->
+        <ContentPage Title="Multiplicación">
+            <StackLayout>
+                <Label Text="Número 1" FontSize="16" />
+                <Entry x:Name="valor1" Placeholder="Ingrese el primer valor" Keyboard="Numeric" />
+
+                <Label Text="Número 2" FontSize="16" />
+                <Entry x:Name="valor2" Placeholder="Ingrese el segundo valor" Keyboard="Numeric" />
+
+                <Label Text="Número 3" FontSize="16" />
+                <Entry x:Name="valor3" Placeholder="Ingrese el tercer valor" Keyboard="Numeric" />
+
+                <Button Text="Multiplicar" Clicked="Multiplicacion_Clicked" BackgroundColor="#4CAF50" TextColor="White" />
+
+                <Label Text="Resultado de la Multiplicación" FontSize="18" FontAttributes="Bold" />
+                <Label x:Name="resultadoMultilplicacion" FontSize="24" TextColor="#2196F3" />
+
+                <Button Text="Limpiar" Clicked="Limpiar_Clicked" BackgroundColor="#FF5722" TextColor="White" />
+            </StackLayout>
+        </ContentPage>
+
+        <!-- Pestaña 4: División -->
+        <ContentPage Title="División">
+            <StackLayout>
+                <Label Text="Número 1" FontSize="16" />
+                <Entry x:Name="valordivi1" Placeholder="Ingrese el primer valor" Keyboard="Numeric" />
+
+                <Label Text="Número 2" FontSize="16" />
+                <Entry x:Name="valordivi2" Placeholder="Ingrese el segundo valor" Keyboard="Numeric" />
+
+                <Button Text="Dividir" Clicked="Division_Clicked" BackgroundColor="#4CAF50" TextColor="White" />
+
+                <Label Text="Resultado de la División" FontSize="18" FontAttributes="Bold" />
+                <Label x:Name="resultadoDivision" FontSize="24" TextColor="#2196F3" />
+
+                <Button Text="Limpiar" Clicked="Limpiar_Clicked" BackgroundColor="#FF5722" TextColor="White" />
+            </StackLayout>
+        </ContentPage>
+    </TabbedPage.Children>
+</TabbedPage>
